@@ -7,6 +7,74 @@
   <title>Sign-up Form</title>
 </head>
 <body>
-  <h1>Font</h1>
+  <main class="main-container">
+    <div class="sidebar">
+      <div class="logo-container">
+        <div class="logo">
+          <img src="assets/odin-lined.png" alt="odin logo">
+        </div>
+        <h1 class="heading1">ODIN</h1>
+      </div>
+      <div class="credit-creator">
+        <p class="credit">
+          Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/">Unsplash</a>
+        </p>
+      </div>
+    </div>
+    <div class="form-container">      
+      <div class="text-container">
+        <p class="info">
+          This is not a real online service! You know you need something
+          like this in your life to help you realize your deepest dreams.
+          Sign up <em>now</em> to get started.
+        </p>
+        <p class="info">
+          You <em>know</em> you want to.
+        </p>
+      </div>
+      <form action="" class="form" method="">
+        <ul> Let's do this!
+          <li class="left-column">
+            <p class="form-item">
+              <label for="fname"> FIRST NAME</label>
+              <br>
+              <input type="text" id="fname" name="first-name" class="first-name" placeholder="Thor">              
+            </p>
+            <p class="form-item">
+              <label for="mail">EMAIL</label>
+              <br>
+              <input type="email" name="mail" id="mail" class="mail" placeholder="valhalla@mail.com">
+            </p>
+            <p class="form-item">
+              <label for="pwd">PASSWORD</label>
+              <br>
+              <input type="password" id="pwd" name="password" class="password">
+            </p>
+          </li>
+          <li class="right-column">
+            <p class="form-item">
+              <label for="lname">LAST NAME</label>
+              <br>
+              <input type="text" id="lname" name="last-name" class="last-name" placeholder="Odinson">
+            </p>
+            <p class="form-item">
+              <label for="phone">PHONE NUMBER</label>
+              <br>
+              <input type="tel" id="phone" name="phone-number" class="phone" placeholder="8-800-700-60-50">
+            </p>
+            <p class="form-item">
+              <label for="pwd-confirm">CONFIRM PASSWORD</label>
+              <br>
+              <input type="text" id="pwd-confirm" name="password-confirm" class="password-confirm">
+            </p>
+          </li>
+        </ul>
+        <button type="submit" class="btn">Create Account</button>
+        <p>
+          Already have an account? <span class="log-in">Log in</span>
+        </p>
+      </form>
+    </div>
+  </main>
 </body>
 </html>
