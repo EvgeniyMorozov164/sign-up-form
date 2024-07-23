@@ -33,46 +33,51 @@
           </p>
         </div>
         <form action="" class="form" method="">
-          <ul> Let's do this!
-            <li class="left-column">
-              <p class="form-item">
-                <label for="fname"> FIRST NAME</label>
-                <br>
-                <input type="text" id="fname" name="first-name" class="first-name" placeholder="Thor">
-              </p>
-              <p class="form-item">
-                <label for="mail">EMAIL</label>
-                <br>
-                <input type="email" name="mail" id="mail" class="mail" placeholder="valhalla@mail.com">
-              </p>
-              <p class="form-item">
-                <label for="pwd">PASSWORD</label>
-                <br>
-                <input type="password" id="pwd" name="password" class="password">
-              </p>
-            </li>
-            <li class="right-column">
-              <p class="form-item">
-                <label for="lname">LAST NAME</label>
-                <br>
-                <input type="text" id="lname" name="last-name" class="last-name" placeholder="Odinson">
-              </p>
-              <p class="form-item">
-                <label for="phone">PHONE NUMBER</label>
-                <br>
-                <input type="tel" id="phone" name="phone-number" class="phone" placeholder="8-800-700-60-50">
-              </p>
-              <p class="form-item">
-                <label for="pwd-confirm">CONFIRM PASSWORD</label>
-                <br>
-                <input type="text" id="pwd-confirm" name="password-confirm" class="password-confirm">
-              </p>
-            </li>
-          </ul>
-          <button type="submit" class="btn">Create Account</button>
-          <p>
-            Already have an account? <span class="log-in">Log in</span>
-          </p>
+          <div class="shadow">
+            <h2>Let's do this!</h2>
+            <ul>
+              <li class="left-column">
+                <p class="form-item">
+                  <label for="fname"> FIRST NAME</label>
+                  <br>
+                  <input type="text" id="fname" name="first-name" class="first-name" placeholder="Thor" minlength="2" maxlength="20" required>
+                </p>
+                <p class="form-item">
+                  <label for="mail">EMAIL</label>
+                  <br>
+                  <input type="email" name="mail" id="mail" class="mail" placeholder="valhalla@mail.com" minlength="10" required>
+                </p>
+                <p class="form-item">
+                  <label for="pwd">PASSWORD</label>
+                  <br>
+                  <input type="password" id="pwd" name="password" class="password" minlength="8" maxlength="16" required>
+                </p>
+              </li>
+              <li class="right-column">
+                <p class="form-item">
+                  <label for="lname">LAST NAME</label>
+                  <br>
+                  <input type="text" id="lname" name="last-name" class="last-name" placeholder="Odinson" minlength="2" maxlength="20" required>
+                </p>
+                <p class="form-item">
+                  <label for="phone">PHONE NUMBER</label>
+                  <br>
+                  <input type="tel" id="phone" name="phone-number" class="phone" placeholder="8-800-700-60-50" required>
+                </p>
+                <p class="form-item">
+                  <label for="pwd-confirm">CONFIRM PASSWORD</label>
+                  <br>
+                  <input type="password" id="pwd-confirm" name="password-confirm" class="password-confirm" minlength="8" maxlength="16" required>
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="btn-container">
+            <button type="submit" class="btn">Create Account</button>
+            <p>
+              Already have an account? <span class="log-in">Log in</span>
+            </p>
+          </div>
         </form>
       </div>    
   </main>
